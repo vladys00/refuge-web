@@ -1,0 +1,132 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+</style>
+
+html, body {
+    margin: 0;
+    padding: 0;
+    /*height: 100%;
+    width: 100%;*/
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url(images/);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1 {
+            margin: 0;
+            font-family: "Alumni Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            text-transform: uppercase;
+            font-size: 50px;
+            color: #FDFF87;
+            text-align: center;
+            text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.40);
+            -webkit-text-stroke-width: 1px; /* Stroke width */
+            -webkit-text-stroke-color: black;
+            font-family: "Alumni Sans";
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 600;
+            
+            text-transform: uppercase; 
+            
+        }
+        h2 {
+            margin: 0;
+            font-family: "Alumni Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            text-transform: uppercase;
+            font-size: 30px;
+            color: #DEFEFE;
+            text-align: center;
+            text-shadow: 0px 4px 4px #8A8A8A;
+            -webkit-text-stroke-width: 1px; 
+            -webkit-text-stroke-color: black;
+            font-family: "Alumni Sans";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            
+        }
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        #board-description_box {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .board-div {
+                width: 22%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .board-div-top {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .description {
+                width: 42%;
+                background-color: #FFFCEC;
+                padding: 5px 8px 5px 8px ;
+                border-radius: 14px;
+                h3 {
+                    color: #000;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                }
+            }
+        }
+        #form-div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            p {
+                text-align: center;
+            }
+            form[action = "/submit-email"]{
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                input {
+                    width: 80%;
+                    margin-bottom: 15px;
+                }
+                button {
+                    width: 80%;
+                }
+            }
+        }
+       
+    }
+}
